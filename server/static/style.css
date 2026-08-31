@@ -1,0 +1,59 @@
+/* CyberMARL Dark Operations Center Theme */
+:root {
+  --bg-main: #090d16;
+  --bg-card: #0f172a;
+  --border-color: #1e293b;
+  --cyan-glow: #00f0ff;
+  --green-glow: #00ff9d;
+  --red-alert: #ff0055;
+  --purple-accent: #a855f7;
+  --yellow-warn: #fbbf24;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.glow-text-green {
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+pre, code {
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+}
